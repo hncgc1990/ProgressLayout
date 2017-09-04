@@ -5,6 +5,7 @@ An extension of RelativeLayout that helps show loading, empty and error layout.
 <img src="https://cloud.githubusercontent.com/assets/4979755/18741168/db29b992-80d7-11e6-9a6a-36b626b003bf.png" height="683" width="384">
 <img src="https://cloud.githubusercontent.com/assets/4979755/18741171/db86bb42-80d7-11e6-9d6f-c7a00b2b9b27.png" height="683" width="384">
 <img src="https://cloud.githubusercontent.com/assets/4979755/18741169/db7879ec-80d7-11e6-9158-a4ff89b78e79.png" height="683" width="384">
+
 ## Download
 Add to your module's build.gradle:
 
@@ -114,7 +115,7 @@ dependencies {
     app:loadingProgressBarRadius="200dp"
     app:loadingProgressBarSpinWidth="10dp"/>
 ```
-##License
+## License
 Copyright 2016 Nguyen Hoang Lam
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
