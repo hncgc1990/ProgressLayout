@@ -9,7 +9,7 @@ import android.widget.Button;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.btn_linear)
     Button btnLinear;
@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnRelative;
     @BindView(R.id.btn_frame)
     Button btnFrame;
+    @BindView(R.id.btn_custome)
+    Button btnCustome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,20 +28,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnLinear.setOnClickListener(this);
         btnRelative.setOnClickListener(this);
         btnFrame.setOnClickListener(this);
+        btnCustome.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent=null;
-        switch (v.getId()){
+        Intent intent = null;
+        switch (v.getId()) {
             case R.id.btn_linear:
-                intent=new Intent(this,LinearLayoutActivity.class);
+                intent = new Intent(this, LinearLayoutActivity.class);
                 break;
             case R.id.btn_relative:
-                intent=new Intent(this,RelativeLayoutActivity.class);
+                intent = new Intent(this, RelativeLayoutActivity.class);
                 break;
             case R.id.btn_frame:
-                intent=new Intent(this,FrameLayoutActivity.class);
+                intent = new Intent(this, FrameLayoutActivity.class);
+                break;
+            case R.id.btn_custome:
+                intent = new Intent(this, CustomViewActivity.class);
                 break;
             default:
                 break;

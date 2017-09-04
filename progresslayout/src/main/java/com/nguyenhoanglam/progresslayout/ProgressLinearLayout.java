@@ -75,6 +75,19 @@ public class ProgressLinearLayout extends LinearLayout {
         mErrorView=new DefaultErrorView(inflater);
     }
 
+
+    public void setLoadingView(ILoadingView mLoadingView) {
+        this.mLoadingView = mLoadingView;
+    }
+
+    public void setRlLoading(RelativeLayout mRlLoading) {
+        this.mRlLoading = mRlLoading;
+    }
+
+    public void setEmptyView(IEmptyView mEmptyView) {
+        this.mEmptyView = mEmptyView;
+    }
+
     @Override
     public void addView(View child, int index, ViewGroup.LayoutParams params) {
         super.addView(child, index, params);
